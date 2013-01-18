@@ -1,0 +1,60 @@
+<!DOCTYPE html>
+<!--Randall Martin
+    VFW 1301
+    Project 1-->
+
+<html>
+<head>
+    <meta charset="utf-8">
+    <meta name="keywords" content="Customer Relations Management, Web Application, HTML5 Web Application, Contact Management">
+    <meta name="description" content="Customer Relations Management">
+    <meta name="robots" content="index, follow">
+    <meta name="viewport" content="user-scalable=no, width=device-width">
+    <meta name="viewport" content="target-densitydpi=device-dpi">
+    <title>Customer Relations Management</title>
+</head>
+
+<body>
+    <header>
+        <h1>Customer Relations Management</h1>
+    </header>
+    <div id="container">
+        <form action="#" id="mainform" method="post">
+            <fieldset id="newCustomer">
+                <legend>Customer Information</legend>
+                <ul>
+                    <li><label for="firstName">FirstName&#58;</label><input type="text" name="first_name" id="first_name" /></li>
+                    <li><label for="lastName">Last Name&#58;</label> <input type="text" name="last_name" id="last_name" /></li>
+                    <li><label for="homeAdd">Home Address&#58;</label> <input type="text" name="home_add" id="home_add" /></li>
+                    <li><label for="emailAdd">Email Address&#58;</label> <input type="email" name="emailAdd" id="email_Add" /></li>
+                    <li><label for="phoneNumber">Home Number&#58;</label><input type="text" name="phone_number" id="phone_number" /></li>
+                    <li><label for="phoneNumber">Cell Number&#58;</label><input type="text" name="phone_number" id="phone_number" <option disabled="disabled"> </li>
+                </ul>
+                 <label for="selectStatus">Customer Status&#58;</label><select name="select_status" id="select_status">
+                 	<option value="1">New Customer</option>
+                    <option value="2">Potential Customer</option>
+                    <option value="3">VIP Customer</option>
+                </select>
+                </fieldset>
+				<fieldset>
+                    <legend>Customer Needs</legend>
+                    <ul>
+                        <li><label>Tablet Training<input type="radio" id="hardware" name="need_type" /></label></li>
+                        <li><label>Computer Training<input type="radio" id="software" name="need_type" /></label></li>
+                        <li><label>Software Training<input type="radio" id="both" name="need_type" /></label></li>
+                        <li><label>Computer Repair<input type="radio" id="both" name="need_type" /></label></li>
+                        <li><label for="knowledge">Knowledge Level&#58;<input type="range" min="0" max="10" step="1" id="knowledge" name="knowledge" /></label></li>
+                        <li><label for="lastContact" id="title4">Last Time Contacted&#58;<input type="date" id="last_contact" /></label></li>
+                        <li><label for="issueDesc"><textarea name="issue_desc" id="issue_desc" placeholder="Add Customer Notes Here" cols="20">Customer Notes</textarea></label></li>
+                    </ul>
+                    <input type="hidden" value="hiddenVal" name="hidden1" />
+                    <input type="submit" id="submit" />
+            </fieldset>
+           <a href="#">Clear Stored Data</a>
+         <a href="#">Display Data</a>
+        </form>
+      </div>
+</body>
+</html>
+</body>
+</html>
